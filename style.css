@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1d212b;
+}
+
+section {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1,h2,h3 {
+    font-family: Kanit;
+}
+
+p {
+    font-family: inter;
+}
+
+section:nth-child(1) {
+    color: #fff;
+}
+section:nth-child(2) {
+    background: #fff;
+    color: #1d212b;
+}
+section:nth-child(3) {
+    color: #fff;
+}
+section:nth-child(4) {
+    background: #fff;
+    color: #1d212b;
+}
+
+.container {
+    margin: 100px;
+}
+
+section h1 {
+    font-size: 60px;
+}
+
+section h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section .cards {
+    display: flex;
+}
+
+section .cards .text-cards  {
+    margin: 20px;
+    padding: 20px;
+    background: rgb(0, 119, 255);
+}
+
+section .cards .text-cards h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reveal {
+    transition: all 2s ease;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
