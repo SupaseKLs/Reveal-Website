@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+        <h1>Reveal Website Elements On Scroll</h1>
+    </section>
+    <section>
+        <div class="container reveal">
+            <h2>Your Title</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container reveal">
+            <h2>Your Title</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container reveal">
+            <h2>Your Title</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere quaerat repellat fugiat dolor quae repudiandae asperiores dolores doloremque natus! Suscipit iusto ut minima vero fuga tempora in quia repudiandae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", reveal);
+
+            function reveal() {
+                var reveals = document.querySelectorAll('.reveal')
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var revealTop = reveals[i].getBoundingClientRect().top;
+                    var revealPoint = 150;
+
+                    if (revealTop < windowHeight - revealPoint) {
+                        reveals[i].classList.add('active');
+                    }
+                    else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+    </script>
+</body>
+</html>
